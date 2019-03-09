@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "JALHomePage/JALHomePage/*.{h,m}"
-  spec.exclude_files = "JALHomePage/Exclude"
+  spec.exclude_files = "JALHomePage/JALHomePage/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
