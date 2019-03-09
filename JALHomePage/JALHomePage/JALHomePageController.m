@@ -7,7 +7,6 @@
 //
 
 #import "JALHomePageController.h"
-#import <MGJRouter/MGJRouter.h>
 
 @interface JALHomePageController ()
 

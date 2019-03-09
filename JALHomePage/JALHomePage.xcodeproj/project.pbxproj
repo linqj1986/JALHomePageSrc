@@ -29,6 +29,7 @@
 		ABD359722233920200901E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABD359742233920200901E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABD359752233920200901E4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABD3597D2233980D00901E4F /* JALHomePagePrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JALHomePagePrefixHeader.pch; sourceTree = "<group>"; };
 		B1268BAED4CD25DE00420456 /* libPods-JALHomePage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JALHomePage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +100,7 @@
 				ABD359712233920200901E4F /* LaunchScreen.storyboard */,
 				ABD359742233920200901E4F /* Info.plist */,
 				ABD359752233920200901E4F /* main.m */,
+				ABD3597D2233980D00901E4F /* JALHomePagePrefixHeader.pch */,
 			);
 			path = Exclude;
 			sourceTree = "<group>";
@@ -342,7 +344,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJXX47MLM6;
+				GCC_PREFIX_HEADER = JALHomePage/Exclude/JALHomePagePrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/JALHomePage/Exclude/Info.plist";
+				INFOPLIST_PREFIX_HEADER = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -361,7 +365,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJXX47MLM6;
+				GCC_PREFIX_HEADER = JALHomePage/Exclude/JALHomePagePrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/JALHomePage/Exclude/Info.plist";
+				INFOPLIST_PREFIX_HEADER = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
