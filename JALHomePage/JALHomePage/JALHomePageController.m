@@ -19,15 +19,12 @@
 {
     [super load];
     
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [MGJRouter registerURLPattern:@"JAL://JALHomePage/MainVC" toHandler:^(NSDictionary *routerParameters) {
-            UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][@"navigationVC"];
-            
-            JALHomePageController *homePageVC = [[JALHomePageController alloc] init];
-            [navigationVC pushViewController:homePageVC animated:YES];
-        }];
-    });
+    [MGJRouter registerURLPattern:@"JAL://JALHomePage/MainVC" toHandler:^(NSDictionary *routerParameters) {
+        UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][@"navigationVC"];
+        
+        JALHomePageController *homePageVC = [[JALHomePageController alloc] init];
+        [navigationVC pushViewController:homePageVC animated:YES];
+    }];
 }
 
 - (void)viewDidLoad {
