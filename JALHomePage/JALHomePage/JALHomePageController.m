@@ -19,19 +19,25 @@
 {
     [super load];
     
-    [MGJRouter registerURLPattern:@"JAL://JALHomePage/MainVC" toHandler:^(NSDictionary *routerParameters) {
-        UINavigationController *navigationVC = routerParameters[MGJRouterParameterUserInfo][@"navigationVC"];
-        
+    [MGJRouter registerURLPattern:@"JAL://JALHomePage/MainVC" toObjectHandler:^id(NSDictionary *routerParameters) {
         JALHomePageController *homePageVC = [[JALHomePageController alloc] init];
-        [navigationVC pushViewController:homePageVC animated:YES];
+        return homePageVC;
     }];
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.title = @"首页";
+    }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor yellowColor];
-    self.title = @"首页";
 }
 
 
